@@ -1,3 +1,5 @@
+let item = require('./item.js');
+
 test('makes sure item exists', () => {
 	expect(item).toBeDefined();
 });
