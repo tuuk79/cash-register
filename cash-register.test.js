@@ -14,4 +14,5 @@ test('should give change if amount tendered is greater than price', () => {
 
 test('should not give any change', () => {
   expect(amountTendered - item.price).toBeLessThanOrEqual(0);
+
 });
