@@ -43,7 +43,7 @@ describe('the basic featurs of a register', () => {
   })
 
   test('Cash Register can only hold currency values', () => {
-    stuff = ['dog', 'cat', 'house', '1.99', '23##', '👕', '🍺', '🏒', '2r.22', '1', '.05'];
+    stuff = ['dog', 'cat', 'house', '1@@.', '23##', '👕', '🍺', '🏒', '2r.22', '1🍣'];
     currency = ['1', '.02', '.2', '100.22'];
     var randomItem = stuff[Math.floor(Math.random() * stuff.length)];
     var randomCurrency = currency[Math.floor(Math.random() * currency.length)];
@@ -51,4 +51,4 @@ describe('the basic featurs of a register', () => {
     expect(cashRegister.drawer.contains(randomItem)).toBeFalsy();
     expect(cashRegister.drawer.contains(randomCurrency)).toBeTruthy();
   })
-}) 
+})
