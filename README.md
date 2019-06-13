@@ -7,7 +7,7 @@ Jest
 Express
 
 # How to Run Tests
-npm run tests
+npm test
 
 # How to Install Dependencies
 npm install
