@@ -1,7 +1,7 @@
 let item = require('./item.js');
 let amountTendered = item.tendered;
 
-let cashRegister = require('./service/cashReister');
+let cashRegister = require('./service/cashRegister');
 
 test('makes sure item exists', () => {
 	expect(item).toBeDefined();
@@ -27,7 +27,7 @@ describe('the basic featurs of a register', () => {
   })
 
   test('Register to be a Cash Register', () => {
-    expect(typeof cashRegister).toBe(CashRegister);
+    expect(cashRegister.typeof).toBe("CashRegister");
   })
 
   test('Register to have a drawer', () => {
